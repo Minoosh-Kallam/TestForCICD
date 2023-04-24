@@ -27,8 +27,9 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - run: cd Employee
-    - run: mvn test
+    - run: |
+        cd Employee
+        mvn test
     
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
