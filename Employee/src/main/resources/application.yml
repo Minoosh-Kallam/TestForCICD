@@ -1,0 +1,28 @@
+server:
+  port: 8082
+  
+  
+  
+spring:
+  application:
+    name: EMPLOYEE-SERVICE
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: minooshreddykallam@gmail.com
+    password: vlklpaxqcmafwvpz
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+      
+      
+    
+    
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
